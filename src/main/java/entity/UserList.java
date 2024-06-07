@@ -33,9 +33,9 @@ public class UserList {
     public static void removeUser(User user) {
         User[] newUsers = new User[users.length - 1];
         int j = 0;
-        for (int i = 0; i < users.length; i++) {
-            if (users[i] != user) {
-                newUsers[j] = users[i];
+        for (User value : users) {
+            if (value != user) {
+                newUsers[j] = value;
                 j++;
             }
         }

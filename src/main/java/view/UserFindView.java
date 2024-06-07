@@ -29,9 +29,7 @@ public class UserFindView  extends JPanel implements ActionListener, PropertyCha
         LabelTextPanel searchInfo = new LabelTextPanel(
                 new JLabel(userFindViewModel.FIND_USER_LABEL), searchField);
 
-        searchButton.addActionListener(e -> {
-            userFindController.findUsers(searchField.getText());
-        });
+        searchButton.addActionListener(e -> userFindController.findUsers(searchField.getText()));
 
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         this.add(searchInfo);

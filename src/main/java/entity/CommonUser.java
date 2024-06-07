@@ -3,10 +3,10 @@ package entity;
 import java.util.Arrays;
 
 public class CommonUser implements User {
-    private String username;
-    private String password;
-    private String tags;
-    private double[] dataVector;
+    private final String username;
+    private final String password;
+    private final String tags;
+    private final double[] dataVector;
 
     public CommonUser(String username, String password, String tags, double[] dataVector) {
         this.username = username;

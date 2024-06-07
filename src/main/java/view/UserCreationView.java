@@ -1,9 +1,7 @@
 package view;
 
 import use_case.create_user.UserCreateController;
-import use_case.create_user.UserCreateInputBoundary;
 import view_model.UserCreationViewModel;
-import view_model.ViewModel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
